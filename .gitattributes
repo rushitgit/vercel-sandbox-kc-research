@@ -1,1 +1,1 @@
-*.attr filter=lfs diff=lfs merge=lfs -text
+lfs/attacker.attr filter=lfs diff=lfs merge=lfs -text
